@@ -26,7 +26,9 @@
 <body>
   <h1>🎂 Catch the Cupcake! 🎂</h1>
   <p id="score">Score: 0</p>
-  <img id="cupcake" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzNRBXHzWkbJCquXNxckGgUxTTRklxiXpzPgZ_pXmDLQ&s" onclick="moveCupcake()">
+
+  <!-- Cupcake Image -->
+  <img id="cupcake" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Cupcake_with_sprinkles.svg/1024px-Cupcake_with_sprinkles.svg.png" onclick="moveCupcake()">
 
   <script>
     let score = 0;
@@ -42,5 +44,9 @@
       cupcake.style.left = x + "px";
       cupcake.style.top = y + "px";
     }
+
+    // Move cupcake when page loads
+    moveCupcake();
   </script>
 </body>
+</html>
